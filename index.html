@@ -1,85 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Insure landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insure</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="insure.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <header>
 
-  How we work
-  Blog
-  Account
-  View plans
+            <nav>
+                <a href="insure.html"><img src="./images/logo.svg" ></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()">.</i>
+                    <ul>
+                        <li><a href="">HOW WE WORK</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">ACCOUNT</a></li>
+                        <li><a href="">VIEW PLANS</a></li>
+                       </ul>
+                </div>
+               <div class="nv"><i class="fa fa-bars" onclick="showMenu()"></i></div>
+            </nav>
+       
+    </header>
+    <section class="header">
+        <div class="text-box">
+           
+            <img src="./images/bg-pattern-intro-left-mobile.svg" class="sleft">
+            
+            <h1>Humanizing your insurance.</h1>
+            <p>
+                Get your life insurance coverage easier and faster.We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected
+            </p>
+            <a href="" class="btn">VIEW PLANS</a>
+        </div>
+        <img src="./images/image-intro-desktop.jpg" class="int">
+        <img src="./images/bg-pattern-intro-right-desktop.svg" class="tro">
+    </section>
+    <img src="./images/bg-pattern-intro-left-desktop.svg" class="left">
+    <img src="./images/bg-pattern-intro-right-mobile.svg" class="right">
+      <!-- Javascript for toggle menu  -->
+    <script>
+        
+        var navlinks = document.getElementById("navlinks")
 
-  Humanizing your insurance.
+        function showMenu(){
+            navlinks.style.right = "0"
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px"
+        }
+        
 
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
+    </script>
 
-  View plans
 
-  We’re different
+    <section class="body">
+        <h1>We're different</h1>
+        <div class="con">
+            <div class="sub">
+                <img src="./images/icon-snappy-process.svg">
+                <h2>Snappy Process</h2>
+                <p class="ng">Our application process can be completed in minutes, not hours. Don't get stuck filling in tedious forms.</p>
+            </div>
+    
+            <div>
+                <img src="./images/icon-affordable-prices.svg">
+                <h2>Affordable Prices</h2>
+                <p class="ng">We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
+            </div>
+            
+            <div>
+                <img src="./images/icon-people-first.svg">
+                <h2>People First</h2>
+                <p class="ng">Our plans aren't full of conditions and clauses  to prevent payouts.We make sure you're covered when you need it.</p>
+            </div>
+        </div>
 
-  Snappy Process
+    </section>
+    <div class="body2">
+        <h2>Find out more about how we work</h2>
+        <a href="" class="btn">HOW WE WORK</a>
+       
+            <img class="desc" src="./images/bg-pattern-how-we-work-desktop.svg">
+            <img class="mob" src="./images/bg-pattern-how-we-work-mobile.svg">
+    </div>
 
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
+    <section class="footer">
+        <div class="cont">
+            <div>
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+       
+        <div class="foot">
+            <div>
+                <h5>OUR COMPANY</h5>
+                <p>HOW WE WORK</p>
+                <p>WHY INSURE?</p>
+                <p>VIEW PLANS</p>
+                <p>REVIEWS</p>
+            </div>
+            <div>
+                <h5>HELP ME</h5>
+                <p>FAQ</p>
+                <p>TERMS OF USE</p>
+                <p>PRIVACY POLICY</p>
+                <p>COOKIES</p>
+            </div>
+            <div>
+                <h5>CONTACT</h5>
+                <p>SALES</p>
+                <p>SUPPORT</p>
+                <p>LIVE CHAT</p>
+            </div>
+            <div>
+                <h5>OTHERS</h5>
+                <p>CAREERS</p>
+                <p>PRESS</p>
+                <p>LICENSES</p>
+            </div>
+        </div>
 
-  Affordable Prices
+    </section>
+    
 
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

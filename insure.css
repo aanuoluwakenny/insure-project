@@ -197,6 +197,7 @@ a{
     align-items: center;
     /* justify-content: space-between; */
     margin: 40px 100px 0;
+    padding-bottom: 40px;
 }
 .foot > div{
     width: 100%;
